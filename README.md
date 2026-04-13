@@ -80,3 +80,17 @@ Start with:
 * one workflow
 
 Add more only when needed.
+
+-- 
+## Why this exists
+
+Most AI workflows rely heavily on prompts, which leads to inconsistent behavior.
+
+This repo shows a simple way to separate:
+- intent (prompts)
+- behavior (system structure)
+
+If you want a deeper explanation, We’ve written it here:
+
+📖 Full blog:
+https://medium.com/@nerdapplabs/the-agent-pattern-a-simple-anatomy-for-ai-systems-76a4d30a9a9b
