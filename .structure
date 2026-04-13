@@ -1,0 +1,19 @@
+agent-system-starter/
+├── README.md
+├── .agent/
+│   ├── behavior.md
+│   ├── coding-guidelines.md
+│   ├── rules/
+│   │   ├── base.md
+│   │   └── anti-loop.md
+│   ├── workflows/
+│   │   ├── fix-bug.md
+│   │   └── debug-docker.md
+│   ├── skills/
+│   │   └── pr-review.md
+│   ├── memory/
+│   │   └── README.md
+│   └── permissions.json
+└── examples/
+    ├── before-prompt.txt
+    └── after-agent.md

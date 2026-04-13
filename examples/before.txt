@@ -1,0 +1,2 @@
+Fix the docker issue. Don't rebuild unnecessarily.
+Check logs. Don't retry too much. Keep it simple.
