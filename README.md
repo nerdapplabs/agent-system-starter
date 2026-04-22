@@ -27,7 +27,12 @@ This is the missing layer between prompts and production AI systems!
 
 ## Quick Start
 
-1. Copy `.agent/` into your repo
+1. Copy `.agent/` into your repo, plus the loader file(s) for your tool:
+
+   * `CLAUDE.md` — Claude Code
+   * `AGENTS.md` — Codex / OpenAI agents
+   * `GEMINI.md` — Gemini CLI
+   * `.cursor/rules/` — Cursor
 
 2. Start with:
 
@@ -50,14 +55,19 @@ This is the missing layer between prompts and production AI systems!
 ## Structure
 
 ```text
-.agent/
-├── behavior.md
-├── coding-guidelines.md
-├── rules/
-├── workflows/
-├── skills/
-├── memory/
-└── permissions.json
+.
+├── CLAUDE.md            # Claude Code loader (imports AGENTS.md)
+├── AGENTS.md            # canonical load order — Codex / OpenAI agents
+├── GEMINI.md            # Gemini CLI loader (imports AGENTS.md)
+├── .cursor/rules/       # Cursor loader (points to AGENTS.md)
+└── .agent/
+    ├── behavior.md
+    ├── coding-guidelines.md
+    ├── rules/
+    ├── workflows/
+    ├── skills/
+    ├── memory/
+    └── permissions.json
 ```
 
 ---
@@ -71,7 +81,7 @@ This defines **how it behaves while doing it**.
 
 ## Start Simple
 
-Don’t use everything.
+Don't use everything.
 
 Start with:
 
@@ -81,16 +91,13 @@ Start with:
 
 Add more only when needed.
 
--- 
-## Why this exists
+---
 
-Most AI workflows rely heavily on prompts, which leads to inconsistent behavior.
+## Deeper explanation
 
-This repo shows a simple way to separate:
+This repo separates:
 - intent (prompts)
 - behavior (system structure)
-
-If you want a deeper explanation, We’ve written it here:
 
 📖 Full blog:
 https://medium.com/@nerdapplabs/the-agent-pattern-a-simple-anatomy-for-ai-systems-76a4d30a9a9b

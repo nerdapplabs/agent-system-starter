@@ -1,0 +1,6 @@
+---
+description: Load order for the .agent/ pattern
+alwaysApply: true
+---
+
+Read [AGENTS.md](../../AGENTS.md) at the start of every task. It defines load order, precedence, and workflow selection for this repo.
