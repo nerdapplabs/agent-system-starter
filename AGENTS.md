@@ -9,9 +9,14 @@ When a task matches a workflow, follow it:
 
 - Bug fix → [.agent/workflows/fix-bug.md](.agent/workflows/fix-bug.md)
 - Docker issue → [.agent/workflows/debug-docker.md](.agent/workflows/debug-docker.md)
-- PR review → [.agent/skills/pr-review.md](.agent/skills/pr-review.md)
 
 If no workflow matches, fall back to behavior + rules.
+
+## Triggered skills
+
+Skills fire on events, not task selection. Check [.agent/skills/](.agent/skills/) for the full list.
+
+- Pull request opened → [.agent/skills/pr-review.md](.agent/skills/pr-review.md)
 
 ## Precedence
 
