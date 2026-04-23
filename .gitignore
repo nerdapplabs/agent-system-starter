@@ -1,2 +1,5 @@
-TODO*
-plan*
+# Personal / working docs — not shipped with the pattern
+.local/
+
+# Personal overrides — tool-specific, gitignored
+.claude/settings.local.json

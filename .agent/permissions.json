@@ -1,4 +1,0 @@
-{
-  "allow": ["read", "test", "lint"],
-  "deny": ["delete", "secrets", "prod-access"]
-}

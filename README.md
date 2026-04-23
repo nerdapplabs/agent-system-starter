@@ -65,9 +65,21 @@ This is the missing layer between prompts and production AI systems!
     ├── rules/
     ├── workflows/
     ├── skills/
-    ├── memory/
-    └── permissions.json
+    └── memory/
 ```
+
+---
+
+## Tool permissions (optional)
+
+The `.agent/` pattern covers instructions, not permissions. Bash and action permissions belong in each tool's native settings — they're not part of `.agent/`.
+
+Claude Code uses a two-file pattern:
+
+- [`.claude/settings.json`](.claude/settings.json) — team defaults, committed. Hard blocks every contributor should share (`rm -rf /*`, reading `.env`, etc.).
+- `.claude/settings.local.json` — personal layer, gitignored. Your own `allow` / `ask` lists. Copy [`.claude/settings.local.json.example`](.claude/settings.local.json.example) to activate.
+
+Other tools use their own user-level or IDE-level config.
 
 ---
 
