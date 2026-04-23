@@ -57,15 +57,18 @@ This is the missing layer between prompts and production AI systems!
 ```text
 .
 ├── CLAUDE.md            # Claude Code loader (imports AGENTS.md)
-├── AGENTS.md            # canonical load order — Codex / OpenAI agents
 ├── GEMINI.md            # Gemini CLI loader (imports AGENTS.md)
 ├── .cursor/rules/       # Cursor loader (points to AGENTS.md)
-└── .agent/
-    ├── behavior.md
-    ├── rules/
-    ├── workflows/
-    ├── skills/
-    └── memory/
+├── AGENTS.md            # canonical load order — Codex / OpenAI agents read this directly
+├── .agent/              # the pattern: instructions
+│   ├── behavior.md
+│   ├── rules/
+│   ├── workflows/
+│   ├── skills/
+│   └── memory/
+└── .claude/             # optional: Claude Code permissions (not part of .agent/)
+    ├── settings.json                # team defaults
+    └── settings.local.json.example  # personal template
 ```
 
 ---
