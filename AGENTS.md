@@ -2,9 +2,8 @@
 
 This repo uses the `.agent/` pattern. Before acting on any task, read:
 
-1. [.agent/behavior.md](.agent/behavior.md) — how to operate
+1. [.agent/behavior.md](.agent/behavior.md) — how to operate and how to code
 2. [.agent/rules/](.agent/rules/) — all files; hard constraints
-3. [.agent/coding-guidelines.md](.agent/coding-guidelines.md) — code style defaults
 
 When a task matches a workflow, follow it:
 
@@ -16,7 +15,7 @@ If no workflow matches, fall back to behavior + rules.
 
 ## Precedence
 
-rules > workflow steps > behavior > coding-guidelines
+rules > workflow steps > behavior
 
 A rule always wins. If a workflow step conflicts with a rule, stop and explain.
 

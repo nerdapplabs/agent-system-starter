@@ -62,7 +62,6 @@ This is the missing layer between prompts and production AI systems!
 ├── .cursor/rules/       # Cursor loader (points to AGENTS.md)
 └── .agent/
     ├── behavior.md
-    ├── coding-guidelines.md
     ├── rules/
     ├── workflows/
     ├── skills/
