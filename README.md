@@ -5,7 +5,9 @@ A minimal `.agent/` setup to make AI coding workflows more predictable.
 Works with:
 
 * Claude Code
-* OpenAI / Codex-style agents
+* Codex / OpenAI agents
+* Gemini CLI
+* Google Antigravity
 * Cursor
 * Any custom agent setup
 
@@ -30,7 +32,7 @@ This is the missing layer between prompts and production AI systems!
 1. Copy `.agent/` into your repo, plus the loader file(s) for your tool:
 
    * `CLAUDE.md` — Claude Code
-   * `AGENTS.md` — Codex / OpenAI agents
+   * `AGENTS.md` — Codex / OpenAI agents / Antigravity
    * `GEMINI.md` — Gemini CLI
    * `.cursor/rules/` — Cursor
 
@@ -59,7 +61,7 @@ This is the missing layer between prompts and production AI systems!
 ├── CLAUDE.md            # Claude Code loader (imports AGENTS.md)
 ├── GEMINI.md            # Gemini CLI loader (imports AGENTS.md)
 ├── .cursor/rules/       # Cursor loader (points to AGENTS.md)
-├── AGENTS.md            # canonical load order — Codex / OpenAI agents read this directly
+├── AGENTS.md            # canonical load order — Codex / Antigravity read this directly
 ├── .agent/              # the pattern: instructions
 │   ├── behavior.md
 │   ├── rules/
