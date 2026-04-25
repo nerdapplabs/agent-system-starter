@@ -12,11 +12,11 @@ When a task matches a workflow, follow it:
 
 If no workflow matches, fall back to behavior + rules.
 
-## Triggered skills
+## Skills
 
-Skills fire on events, not task selection. Check [.agent/skills/](.agent/skills/) for the full list.
+Named procedures the user invokes by name (*"run the pr-review skill"*). Unlike workflows, the agent doesn't auto-select skills. Check [.agent/skills/](.agent/skills/) for the full list.
 
-- Pull request opened → [.agent/skills/pr-review.md](.agent/skills/pr-review.md)
+- [.agent/skills/pr-review.md](.agent/skills/pr-review.md) — review the current diff
 
 ## Precedence
 
